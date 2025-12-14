@@ -1,15 +1,21 @@
 # The Glitch Clicker
 
-A Python-based incremental clicker game built with Tkinter. This project demonstrates state management, file I/O for persistence, and basic game loops.
+A Python-based incremental clicker game built with Tkinter. 
+
+I created this project as a personal refresher to polish my Python skills after a two-year hiatus. It focuses on re-learning object-oriented programming patterns and GUI development.
+
+## Project Goals
+- **Refactoring Skills:** Implementing clean class structures instead of global scripts.
+- **State Management:** Handling dynamic game states (the "glitch" mechanic).
+- **File I/O:** implementing local data persistence for high scores.
 
 ## Features
-- **Dynamic Scaling:** Click value doubles after a specific threshold (10 clicks).
-- **High Score System:** Automatically saves your best score to `highscore.txt`.
-- **Currency Exchange:** A high-risk, high-reward economy mechanic.
+- **Dynamic Scaling:** Click value doubles after a threshold (10 clicks).
+- **Persistence:** High Score is automatically saved locally.
+- **Economy:** Currency exchange mechanism implemented for risk/reward logic.
 
 ## How to Run
-1. Ensure you have Python installed.
-2. Clone this repository.
-3. Run the command:
+1. Ensure Python is installed.
+2. Run the game:
    ```bash
    python main.py
