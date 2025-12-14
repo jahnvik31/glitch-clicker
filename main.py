@@ -1,8 +1,8 @@
 import tkinter as tk
 import os
 
-# CONFIGURATION
-# Professionals use constants for "magic numbers" so they are easy to change later
+# configuration
+
 THRESHOLD_CLICKS = 10    # The 'x' amount of clicks
 BASE_MULTIPLIER = 1      # Initial points per click
 BOOSTED_MULTIPLIER = 2   # Points per click after threshold
@@ -53,7 +53,7 @@ class ClickerGame:
         """Handles the main clicking logic."""
         self.click_count += 1
         
-        # Logic: After x clicks, return 2x points (or double multiplier)
+        # Logic: After x clicks, return 2x points (double multiplier)
         if self.click_count >= THRESHOLD_CLICKS:
             points_to_add = BOOSTED_MULTIPLIER
             self.lbl_status.config(text="Level: BOOSTED (2 pts/click)!", fg="red")
